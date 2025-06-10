@@ -1,0 +1,115 @@
+{
+    "window": {
+        "title": "专业图像处理工具 v1.0",
+        "size_ratio": 0.8,
+        "background_color": "#404040",
+        "description": {
+            "title": "窗口标题",
+            "size_ratio": "窗口大小占屏幕的比例",
+            "background_color": "画布背景色"
+        }
+    },
+    "image": {
+        "supported_formats": [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.bmp",
+            "*.gif"
+        ],
+        "default_alpha": 0.5,
+        "resize_method": "LANCZOS",
+        "description": {
+            "supported_formats": "支持的图片格式",
+            "default_alpha": "默认透明度",
+            "resize_method": "图像缩放方法"
+        }
+    },
+    "transform": {
+        "max_history": 3,
+        "rotation_sensitivity": 0.2,
+        "shear_sensitivity": 0.005,
+        "scale_limits": {
+            "min": 0.1,
+            "max": 5.0
+        },
+        "shear_limits": {
+            "min": -1.0,
+            "max": 1.0
+        },
+        "description": {
+            "max_history": "最大历史记录数",
+            "rotation_sensitivity": "旋转灵敏度",
+            "shear_sensitivity": "剪切灵敏度",
+            "scale_limits": {
+                "min": "最小缩放比例",
+                "max": "最大缩放比例"
+            },
+            "shear_limits": {
+                "min": "最小剪切值",
+                "max": "最大剪切值"
+            }
+        }
+    },
+    "folders": {
+        "data": "data",
+        "results": "results",
+        "description": {
+            "data": "数据文件夹",
+            "results": "结果文件夹"
+        }
+    },
+    "ui": {
+        "handle_size": 8,
+        "guide_color": "#FF0000",
+        "text_color": "white",
+        "text_font": [
+            "Arial",
+            10
+        ],
+        "handle_color": {
+            "fill": "white",
+            "outline": "black"
+        },
+        "rotation_guide": {
+            "length": 20,
+            "width": 2
+        },
+        "feedback": {
+            "offset_x": 20,
+            "offset_y": 20
+        },
+        "description": {
+            "handle_size": "缩放控制点大小",
+            "guide_color": "辅助线颜色",
+            "text_color": "文本颜色",
+            "text_font": "文本字体",
+            "handle_color": {
+                "fill": "控制点填充颜色",
+                "outline": "控制点边框颜色"
+            },
+            "rotation_guide": {
+                "length": "旋转辅助线长度",
+                "width": "旋转辅助线宽度"
+            },
+            "feedback": {
+                "offset_x": "反馈文本X偏移",
+                "offset_y": "反馈文本Y偏移"
+            }
+        }
+    },
+    "file": {
+        "default_save_format": "png",
+        "matrix_format": {
+            "decimal_places": 4,
+            "timestamp_format": "%Y%m%d_%H%M%S"
+        },
+        "description": {
+            "default_save_format": "默认保存格式",
+            "matrix_format": {
+                "decimal_places": "矩阵数值小数位数",
+                "timestamp_format": "时间戳格式"
+            }
+        }
+    }
+}
